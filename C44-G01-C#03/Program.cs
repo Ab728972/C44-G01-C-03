@@ -4,7 +4,156 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Question 1 - Divisible by 3 and 4
+            static string CheckDivisibility(int number)
+            {
+                return (number % 3 == 0 && number % 4 == 0) ? "Yes" : "No";
+            }
+            #endregion
+            #region Question 2 - Positive or Negative
+            static string CheckPositiveNegative(int number)
+            {
+                return (number < 0) ? "negative" : "positive";
+            }
+            #endregion
+            #region Question 3 - Find Min and Max
+            static void FindMinMax(int a, int b, int c)
+            {
+                int max = Math.Max(a, Math.Max(b, c));
+                int min = Math.Min(a, Math.Min(b, c));
+                Console.WriteLine($"Max element = {max}");
+                Console.WriteLine($"Min element = {min}");
+            }
+            #endregion
+            #region Question 4 - Even or Odd
+            static string CheckEvenOdd(int number)
+            {
+                return (number % 2 == 0) ? "Even" : "Odd";
+            }
+            #endregion
+            #region Question 5 - Vowel or Consonant
+            static string CheckVowel(char ch)
+            {
+                char lowerCh = char.ToLower(ch);
+                return (lowerCh == 'a' || lowerCh == 'e' || lowerCh == 'i' ||
+                        lowerCh == 'o' || lowerCh == 'u') ? "vowel" : "consonant";
+            }
+            #endregion
+            #region Question 6 - Print Numbers
+            static void PrintNumbers(int n)
+            {
+                for (int i = 1; i <= n; i++)
+                {
+                    Console.Write(i + (i < n ? ", " : ""));
+                }
+                Console.WriteLine();
+            }
+            #endregion
+            #region Question 7 - Multiplication Table
+            static void PrintMultiplicationTable(int number)
+            {
+                for (int i = 1; i <= 12; i++)
+                {
+                    Console.Write(number * i + " ");
+                }
+                Console.WriteLine();
+            }
+            #endregion
+            #region Question 8 - Print Even Numbers
+            static void PrintEvenNumbers(int n)
+            {
+                for (int i = 2; i <= n; i += 2)
+                {
+                    Console.Write(i + " ");
+                }
+                Console.WriteLine();
+            }
+            #endregion
+            #region Question 9 - Calculate Power
+            static int CalculatePower(int baseNum, int exponent)
+            {
+                int result = 1;
+                for (int i = 0; i < exponent; i++)
+                {
+                    result *= baseNum;
+                }
+                return result;
+            }
+            #endregion
+            #region Question 10 - Marks Calculation
+            static void CalculateMarks(int[] marks)
+            {
+                int total = marks.Sum();
+                int average = total / marks.Length;
+                int percentage = average;
+
+                Console.WriteLine($"Total marks = {total}");
+                Console.WriteLine($"Average Marks = {average}");
+                Console.WriteLine($"Percentage = {percentage}");
+            }
+            #endregion
+            #region Question 11 - Days in Month
+            static int GetDaysInMonth(int month)
+            {
+                if (month == 2) return 28;
+                if (month == 4 || month == 6 || month == 9 || month == 11) return 30;
+                return 31;
+            }
+            #endregion
+
+            #region Question 12 - Identity Matrix
+            static void PrintIdentityMatrix(int n)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        Console.Write((i == j) ? "1 " : "0 ");
+                    }
+                    Console.WriteLine();
+                }
+            }
+            #endregion
+            #region Question 13 - Sum of Array
+            static int SumArrayElements(int[] arr)
+            {
+                return arr.Sum();
+            }
+            #endregion
+            #region Question 14 - Element Frequency
+            static void CountElementFrequency(int[] arr)
+            {
+                var frequency = arr.GroupBy(x => x)
+                                 .ToDictionary(g => g.Key, g => g.Count());
+
+                foreach (var item in frequency)
+                {
+                    Console.WriteLine($"{item.Key} occurs {item.Value} times");
+                }
+            }
+            #endregion
+            #region Question 14 - Element Frequency
+            static void CountElementFrequency(int[] arr)
+            {
+                var frequency = arr.GroupBy(x => x)
+                                 .ToDictionary(g => g.Key, g => g.Count());
+
+                foreach (var item in frequency)
+                {
+                    Console.WriteLine($"{item.Key} occurs {item.Value} times");
+                }
+            }
+            #endregion
+            #region Question 16 - Second Largest
+            static int FindSecondLargest(int[] arr)
+            {
+                return arr.OrderByDescending(x => x).Distinct().Skip(1).First();
+            }
+            #endregion
+
+
+
+
         }
     }
 }
