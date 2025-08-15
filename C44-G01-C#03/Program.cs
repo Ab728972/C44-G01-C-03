@@ -80,6 +80,18 @@
                 return result;
             }
             #endregion
+            #region Question 10 - Marks Calculation
+            static void CalculateMarks(int[] marks)
+            {
+                int total = marks.Sum();
+                int average = total / marks.Length;
+                int percentage = average;
+
+                Console.WriteLine($"Total marks = {total}");
+                Console.WriteLine($"Average Marks = {average}");
+                Console.WriteLine($"Percentage = {percentage}");
+            }
+            #endregion
 
 
 
