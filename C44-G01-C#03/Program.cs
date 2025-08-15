@@ -69,6 +69,17 @@
                 Console.WriteLine();
             }
             #endregion
+            #region Question 9 - Calculate Power
+            static int CalculatePower(int baseNum, int exponent)
+            {
+                int result = 1;
+                for (int i = 0; i < exponent; i++)
+                {
+                    result *= baseNum;
+                }
+                return result;
+            }
+            #endregion
 
 
 
