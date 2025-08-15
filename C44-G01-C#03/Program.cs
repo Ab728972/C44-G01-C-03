@@ -39,6 +39,16 @@
                         lowerCh == 'o' || lowerCh == 'u') ? "vowel" : "consonant";
             }
             #endregion
+            #region Question 6 - Print Numbers
+            static void PrintNumbers(int n)
+            {
+                for (int i = 1; i <= n; i++)
+                {
+                    Console.Write(i + (i < n ? ", " : ""));
+                }
+                Console.WriteLine();
+            }
+            #endregion
 
 
         }
