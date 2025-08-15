@@ -49,6 +49,16 @@
                 Console.WriteLine();
             }
             #endregion
+            #region Question 7 - Multiplication Table
+            static void PrintMultiplicationTable(int number)
+            {
+                for (int i = 1; i <= 12; i++)
+                {
+                    Console.Write(number * i + " ");
+                }
+                Console.WriteLine();
+            }
+            #endregion
 
 
         }
