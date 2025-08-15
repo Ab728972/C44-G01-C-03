@@ -120,6 +120,18 @@
                 return arr.Sum();
             }
             #endregion
+            #region Question 14 - Element Frequency
+            static void CountElementFrequency(int[] arr)
+            {
+                var frequency = arr.GroupBy(x => x)
+                                 .ToDictionary(g => g.Key, g => g.Count());
+
+                foreach (var item in frequency)
+                {
+                    Console.WriteLine($"{item.Key} occurs {item.Value} times");
+                }
+            }
+            #endregion
 
 
 
