@@ -10,6 +10,12 @@
                 return (number % 3 == 0 && number % 4 == 0) ? "Yes" : "No";
             }
             #endregion
+            #region Question 2 - Positive or Negative
+            static string CheckPositiveNegative(int number)
+            {
+                return (number < 0) ? "negative" : "positive";
+            }
+            #endregion
 
         }
     }
