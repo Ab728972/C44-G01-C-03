@@ -144,6 +144,12 @@
                 }
             }
             #endregion
+            #region Question 16 - Second Largest
+            static int FindSecondLargest(int[] arr)
+            {
+                return arr.OrderByDescending(x => x).Distinct().Skip(1).First();
+            }
+            #endregion
 
 
 
