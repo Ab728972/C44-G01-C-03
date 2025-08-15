@@ -59,6 +59,17 @@
                 Console.WriteLine();
             }
             #endregion
+            #region Question 8 - Print Even Numbers
+            static void PrintEvenNumbers(int n)
+            {
+                for (int i = 2; i <= n; i += 2)
+                {
+                    Console.Write(i + " ");
+                }
+                Console.WriteLine();
+            }
+            #endregion
+
 
 
         }
