@@ -25,6 +25,13 @@
                 Console.WriteLine($"Min element = {min}");
             }
             #endregion
+            #region Question 4 - Even or Odd
+            static string CheckEvenOdd(int number)
+            {
+                return (number % 2 == 0) ? "Even" : "Odd";
+            }
+            #endregion
+
 
         }
     }
