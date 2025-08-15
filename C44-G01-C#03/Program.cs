@@ -31,6 +31,14 @@
                 return (number % 2 == 0) ? "Even" : "Odd";
             }
             #endregion
+            #region Question 5 - Vowel or Consonant
+            static string CheckVowel(char ch)
+            {
+                char lowerCh = char.ToLower(ch);
+                return (lowerCh == 'a' || lowerCh == 'e' || lowerCh == 'i' ||
+                        lowerCh == 'o' || lowerCh == 'u') ? "vowel" : "consonant";
+            }
+            #endregion
 
 
         }
