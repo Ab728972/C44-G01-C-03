@@ -114,6 +114,12 @@
                 }
             }
             #endregion
+            #region Question 13 - Sum of Array
+            static int SumArrayElements(int[] arr)
+            {
+                return arr.Sum();
+            }
+            #endregion
 
 
 
